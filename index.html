@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Share Modal App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +33,7 @@
           <p>Founder, Code Help</p>
 
           <div class="buttons">
-            <button class="button-both button-share">
+            <button class="button-both button-share" onclick="showModal()">
               <i></i>
               <div>Share My Profile</div>
             </button>
@@ -35,41 +44,35 @@
         <div class="modal">
           <div class="modal-header">
             <h2>Share My Profile</h2>
-            <i></i>
+            <i class="fa-regular fa-x" onclick="removeModal()"></i>
           </div>
           <div class="line-hr"></div>
           <p>Share this via</p>
 
           <div class="icons">
-            <div class="icon icon1">
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
-            <div class="icon icon2">
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
-            <div class="icon icon3">
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
-            <div class="icon icon4">
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
-            <div class="icon icon5">
-              <a href="#">
-                <i></i>
-              </a>
-            </div>
+            <a href="#" class="icon icon1">
+              <i></i>
+            </a>
+
+            <a href="#" class="icon icon2">
+              <i></i>
+            </a>
+
+            <a href="#" class="icon icon3">
+              <i></i>
+            </a>
+
+            <a href="#" class="icon icon4">
+              <i></i>
+            </a>
+
+            <a href="#" class="icon icon5">
+              <i></i>
+            </a>
           </div>
         </div>
 
-        <div class="overlay"></div>
+        <div class="overlay" onclick="removeModal()"></div>
       </div>
     </div>
 
