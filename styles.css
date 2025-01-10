@@ -146,6 +146,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform-origin: left;
   border: 2px solid #ffffff59;
   border-radius: 20px;
   background-color: #00000088;
